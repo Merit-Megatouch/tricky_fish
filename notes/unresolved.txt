@@ -1,0 +1,182 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+LinkFanTimeSetting | libmeritbasegame.so
+LinkShowDeckSetting | libmeritbasegame.so
+NetGlob | libmeritbasegame.so
+RankFunc | libmeritbasegame.so
+WhoWeArePlaying | libmeritbasegame.so
+FileExists(char const*) | libmerit2d.so
+StopAllSounds(SoundBase*, bool) | tricky_fish.so
+Debug_Flag_Set(char const*, char const*) | tricky_fish.so
+Heartbeat_Check(int, int) | libmeritbasegame.so
+debug_check_address(void*) | libmerit2d.so
+debug_check_address(void*) | libmeritbasegame.so
+Heartbeat_WaitForAll(unsigned long, bool) | libmeritbasegame.so
+Heartbeat_WaitForAll(unsigned long, bool) | tricky_fish.so
+GetMyId() | libmeritbasegame.so
+GetMaster() | libmeritbasegame.so
+MeritInput::InputManager::GetInstance() | libmerit2d.so
+MeritInput::InputManager::GetInstance() | libmeritbasegame.so
+MeritInput::InputManager::GetInstance() | tricky_fish.so
+MeritInput::InputManager::DeleteInstance() | libmeritbasegame.so
+MeritInput::InputManager::Update(bool) | tricky_fish.so
+MeritSound::SoundManager::DelInstance() | libmeritbasegame.so
+MeritSound::SoundManager::GetInstance() | libmeritbasegame.so
+MeritSound::SoundManager::Update(unsigned int) | libmeritbasegame.so
+MeritSound::SoundManager::Terminate() | libmeritbasegame.so
+NetGlobals::GetHeadIdx(unsigned char) | libmeritbasegame.so
+NetGlobals::ProcNetClicks() | libmeritbasegame.so
+NetGlobals::GetTrueLinkCount() | libmeritbasegame.so
+NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | libmeritbasegame.so
+ScreenInfo::GetInstance() | libmerit2d.so
+WorldClass::RefreshArea(int, int, int, int) | libmerit2d.so
+WorldClass::RefreshArea(int, int, int, int) | libmeritbasegame.so
+WorldClass::PlayDeltaAnim(char*, int, int, unsigned long, unsigned long, char*, unsigned short, unsigned char, bool) | libmerit2d.so
+WorldClass::AnimationFrames(Bitmap*) | libmerit2d.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | libmerit2d.so
+WorldClass::SetBack(char const*, int) | libmerit2d.so
+WorldClass::SetBack(char const*, int) | libmeritbasegame.so
+WorldClass::GetFrame(Bitmap*, int) | libmerit2d.so
+WorldClass::DeleteBmp(Bitmap*, unsigned char) | libmerit2d.so
+WorldClass::LoadAdBmp(char const*, int, float, int, int, bool) | libmerit2d.so
+WorldClass::NextFrame(unsigned char, unsigned char, bool, bool, bool, bool) | libmeritbasegame.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | libmerit2d.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | libmeritbasegame.so
+system_info::SystemInfo::GetInstance() | libmeritbasegame.so
+system_info::SystemInfo::GetInstance() | tricky_fish.so
+system_info::SystemInfo::IsPlatformForce() | libmeritbasegame.so
+system_info::SystemInfo::IsPlatformForce() | tricky_fish.so
+MegacGlobals::PopWorld() | libmeritbasegame.so
+MegacGlobals::PushWorld(char const*, char const*, bool) | libmeritbasegame.so
+MyMeritManager::GetGameLevel(xml_gameinfo::GameIds) | libmeritbasegame.so
+MyMeritManager::SetGameLevel(xml_gameinfo::GameIds, int) | libmeritbasegame.so
+MyMeritManager::Instance() | libmeritbasegame.so
+ExtendedCrashInfo::ExtendedCrashInfo() | libmeritbasegame.so
+ExtendedCrashInfo::~ExtendedCrashInfo() | libmeritbasegame.so
+abstract_metadata::abstract_metadata(char const*, db_common_field_def const*, int, char const*, db_common_index_def const*, int, char const* const*, int, bool) | libmerit2d.so
+abstract_xml_record::AdjustTimeFields(int, long) | libmerit2d.so
+abstract_xml_record::AddChild(abstract_xml_record*, char const*, unsigned int) | libmerit2d.so
+abstract_xml_record::NewChild(char*) | libmerit2d.so
+abstract_xml_record::ReadFile(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*, bool) | libmerit2d.so
+abstract_xml_record::abstract_xml_record(abstract_xml_record const&) | libmerit2d.so
+abstract_xml_record::abstract_xml_record() | libmerit2d.so
+abstract_xml_record::~abstract_xml_record() | libmerit2d.so
+List::RemoveFrom(Group*) | libmerit2d.so
+List::Push(Group*) | libmerit2d.so
+List::Clear(unsigned char) | libmerit2d.so
+List::IsEmpty() | libmerit2d.so
+List::List(List*) | libmerit2d.so
+Group::Signal(Group::SpriteSignalType) | libmerit2d.so
+Group::Signal(SpriteSignal*) | libmerit2d.so
+Group::Message(Group::SpriteSignalType) | libmerit2d.so
+Group::Message(SpriteSignal*) | libmerit2d.so
+USBIO::JoystickFound() | libmeritbasegame.so
+Bitmap::DeCompress() | libmerit2d.so
+Bitmap::DrawCircle(int, int, int, int, int, int, bool) | libmerit2d.so
+Bitmap::DrawSpline(int, int, int, int, int, int, int, int, int, int, int) | libmerit2d.so
+Bitmap::FreeMemory() | libmerit2d.so
+Bitmap::DrawEllipse(int, int, int, int, int, int, int) | libmerit2d.so
+Bitmap::DeCompress32() | libmerit2d.so
+Bitmap::DeltaAdvance(bool, int*) | libmerit2d.so
+Bitmap::DrawTriangle(int, int, int, int, int, int, int, int, int) | libmerit2d.so
+Bitmap::DrawRectangle(int, int, int, int, int, int, int) | libmerit2d.so
+Bitmap::DrawArc(int, int, float, float, int, int, int, int) | libmerit2d.so
+Bitmap::Compress(bool, int, unsigned short*) | libmerit2d.so
+Bitmap::DrawLine(int, int, int, int, int, int, int) | libmerit2d.so
+Bitmap::NextAnim() | libmerit2d.so
+Bitmap::DeltaOpen(char*) | libmerit2d.so
+Bitmap::DrawPoint(int, int, int, int, int) | libmerit2d.so
+EventO::GetType() | libmerit2d.so
+EventO::EventO() | libmerit2d.so
+EventO::~EventO() | libmerit2d.so
+Locale::enum_Languages_tag(Locale::Languages, bool) | libmerit2d.so
+Locale::enum_Languages_value(char const*) | libmerit2d.so
+Sprite::ColoredOff(unsigned long) | libmerit2d.so
+Sprite::SetTextRGB(int, int, int, unsigned long) | libmerit2d.so
+Sprite::DoNextFrame() | libmeritbasegame.so
+Sprite::SpriteClick() | libmeritbasegame.so
+Sprite::AssignString(String*, unsigned long) | libmerit2d.so
+Sprite::ChangeString(char const*, unsigned long) | libmerit2d.so
+Sprite::PixelCollide(float, int) | libmerit2d.so
+Sprite::ClicksEnabled | libmerit2d.so
+Sprite::EffectBalloon(int, unsigned long, unsigned long) | libmerit2d.so
+Sprite::EffectExplode(int, int, int, unsigned long) | libmerit2d.so
+Sprite::EffectImplode(int, int, int, unsigned long) | libmerit2d.so
+Sprite::EffectOutline(int, unsigned char, unsigned char, unsigned char, bool) | libmerit2d.so
+Sprite::EffectSlideFadeIn(int, int, int, int) | libmerit2d.so
+Sprite::KillAllEnableEvents() | libmerit2d.so
+Sprite::CreateTextDropShadow(float, float, unsigned long, int, int, int) | libmerit2d.so
+Sprite::EffectSquishChangeBmp(Bitmap*, int, int, unsigned long, unsigned long, int, int, bool) | libmerit2d.so
+Sprite::KillAllMovementEvents() | libmerit2d.so
+Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | libmerit2d.so
+Sprite::Move(float, float, float, float, float, float, unsigned long, unsigned long, unsigned char) | libmerit2d.so
+Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | libmerit2d.so
+Sprite::Curve(int, int, int, int, int, int, int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | libmerit2d.so
+Sprite::Reset() | libmeritbasegame.so
+Sprite::DoDraw() | libmeritbasegame.so
+Sprite::Enable(unsigned long) | libmerit2d.so
+Sprite::FadeIn(unsigned long, unsigned long, int, int) | libmerit2d.so
+Sprite::MoveTo(float, float, float, unsigned long, unsigned long, unsigned char) | libmerit2d.so
+Sprite::MoveTo(int, int, int, unsigned long, unsigned long, unsigned char) | libmerit2d.so
+Sprite::Rotate(float, float, Sprite::RotationDirection, unsigned long, unsigned long, unsigned char) | libmerit2d.so
+Sprite::SetBmp(Bitmap*, unsigned long) | libmerit2d.so
+Sprite::SetRGB(int, int, int, unsigned long) | libmerit2d.so
+Sprite::Signal(Group::SpriteSignalType) | libmeritbasegame.so
+Sprite::Signal(SpriteSignal*) | libmeritbasegame.so
+Sprite::ColorIt(int, int, int, int, int, int, int, int, int, unsigned long) | libmerit2d.so
+Sprite::Disable(unsigned long, bool) | libmerit2d.so
+Sprite::FadeRGB(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | libmerit2d.so
+Sprite::Message(Group::SpriteSignalType) | libmeritbasegame.so
+Sprite::Message(SpriteSignal*) | libmeritbasegame.so
+Sprite::ScaleXY(float, float, float, float, unsigned long, unsigned long, unsigned char) | libmerit2d.so
+Sprite::SetCord(float, float, float, unsigned long) | libmerit2d.so
+Sprite::SetSize(int, int) | libmerit2d.so
+Sprite::SetAlpha(int, unsigned long) | libmerit2d.so
+Sprite::DoCommand(int) | libmeritbasegame.so
+Sprite::HardScale(int, int) | libmerit2d.so
+Sprite::PlaySound(char*, int, unsigned long) | libmerit2d.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | libmerit2d.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | libmerit2d.so
+Profiler::DelInstance() | tricky_fish.so
+Profiler::Stop(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | tricky_fish.so
+Profiler::Start(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | tricky_fish.so
+SoundOGG::PlayOGG(char*, unsigned short, int) | tricky_fish.so
+SoundOGG::StopOGG(SoundOGG*) | tricky_fish.so
+NetSprite::SendPacket(unsigned char) | libmeritbasegame.so
+NetSprite::NetSprite(Bitmap*, unsigned short, unsigned char, unsigned short) | libmeritbasegame.so
+NetSprite::~NetSprite() | libmeritbasegame.so
+MeritInput::InputManager::KeyboardGetKey(int) const | libmeritbasegame.so
+MeritInput::InputManager::KeyboardGetKey(int) const | tricky_fish.so
+MeritInput::InputManager::MouseGetButton(int) const | libmerit2d.so
+MeritInput::InputManager::MouseGetButton(int) const | tricky_fish.so
+MeritInput::InputManager::MouseGetX() const | libmerit2d.so
+MeritInput::InputManager::MouseGetX() const | tricky_fish.so
+MeritInput::InputManager::MouseGetY() const | libmerit2d.so
+MeritInput::InputManager::MouseGetY() const | tricky_fish.so
+MyMeritManager::PlayerLoaded() const | libmeritbasegame.so
+MyMeritManager::Name() const | libmeritbasegame.so
+abstract_xml_record::ChildCount() const | libmerit2d.so
+abstract_xml_record::GetChildren() const | libmerit2d.so
+abstract_xml_record::ChildName(int) const | libmerit2d.so
+layout::ScreenControl::GetCurrentWidth() const | libmerit2d.so
+layout::ScreenControl::GetCurrentHeight() const | libmerit2d.so
+typeinfo for abstract_record | libmerit2d.so
+typeinfo for ExtendedCrashInfo | libmeritbasegame.so
+typeinfo for abstract_xml_record | libmerit2d.so
+typeinfo for EventO | libmerit2d.so
+typeinfo for NetSprite | libmeritbasegame.so
+_rgb_b_shift_32 | libmerit2d.so
+_rgb_g_shift_32 | libmerit2d.so
+_rgb_r_shift_32 | libmerit2d.so
+blit | libmerit2d.so
+getb | libmerit2d.so
+getg | libmerit2d.so
+getr | libmerit2d.so
+makecol | libmerit2d.so
+masked_blit | libmerit2d.so
+position_mouse | libmerit2d.so
+set_alpha_blender | libmerit2d.so
+set_trans_blender | libmerit2d.so
+voice_stop | tricky_fish.so
