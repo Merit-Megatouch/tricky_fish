@@ -8,20 +8,7 @@ TwDrvFifo_open | libtouchscreen.so
 TwDrvFifo_read | libtouchscreen.so
 TwDrvFifo_write | libtouchscreen.so
 StopAllSounds(SoundBase*, bool) | tricky_fish.so
-debug_check_address(void*) | libmerit2d.so
-debug_check_address(void*) | libmeritbasegame.so
-Heartbeat_WaitForAll(unsigned long, bool) | libmeritbasegame.so
-Heartbeat_WaitForAll(unsigned long, bool) | tricky_fish.so
 NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | libmeritbasegame.so
-MyMeritManager::GetGameLevel(xml_gameinfo::GameIds) | libmeritbasegame.so
-MyMeritManager::SetGameLevel(xml_gameinfo::GameIds, int) | libmeritbasegame.so
-MyMeritManager::Instance() | libmeritbasegame.so
 USBIO::JoystickFound() | libmeritbasegame.so
-Profiler::DelInstance() | tricky_fish.so
-Profiler::Stop(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | tricky_fish.so
-Profiler::Start(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | tricky_fish.so
 SoundOGG::PlayOGG(char*, unsigned short, int) | tricky_fish.so
 SoundOGG::StopOGG(SoundOGG*) | tricky_fish.so
-MyMeritManager::PlayerLoaded() const | libmeritbasegame.so
-MyMeritManager::Name() const | libmeritbasegame.so
-voice_stop | tricky_fish.so
