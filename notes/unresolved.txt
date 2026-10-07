@@ -8,5 +8,3 @@ TwDrvFifo_open | libtouchscreen.so
 TwDrvFifo_read | libtouchscreen.so
 TwDrvFifo_write | libtouchscreen.so
 StopAllSounds(SoundBase*, bool) | tricky_fish.so
-SoundOGG::PlayOGG(char*, unsigned short, int) | tricky_fish.so
-SoundOGG::StopOGG(SoundOGG*) | tricky_fish.so
